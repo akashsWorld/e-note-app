@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .nav-menu{
+        @apply flex flex-row h-10
+    }
+
+    #nav-links li {
+        @apply mx-8 p-2 text-xl font-crimson cursor-pointer text-gray-600
+    }
+
+    .welcome-title-transition{
+        @apply transition ease-linear duration-700 
+    }
+    .signup-button-hover{
+        @apply text-black bg-orange-700 border-[1px] rounded 
+    }
+
+    .sign-in-hover{
+        @apply bg-gray-400 bg-opacity-40 text-black  rounded 
+    }
+}
